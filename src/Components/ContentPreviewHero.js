@@ -2,7 +2,7 @@ import React from "react";
 
 const ContentPreviewHero = props => {
   return (
-    <div className="ContentHero">
+    <div className="ContentPreviewHero">
       <img src="" alt="User's Avatar" />
       <h1>Content Title</h1>
       <div className="CreditsInfo">
