@@ -1,14 +1,22 @@
 import React from "react";
 
-const CardHeader = params => {
+const CardHeader = ({
+  author,
+  authorHandle,
+  contentTitle,
+  userFullName,
+  userHandle
+}) => {
   return (
     <div className="CardHeader">
       <img src="" alt="User's Avatar" className="Avatar" />
       <p>
-        <strong>User's Full Name</strong> <span>User's Handle - Date</span>
+        <strong>{userFullName}</strong> <span>{userHandle} - Date</span>
       </p>
-      <p>Message</p>
-      <p>author: @Credits</p>
+      <p>{contentTitle}</p>
+      <p>
+        {author}: @{authorHandle}
+      </p>
     </div>
   );
 };

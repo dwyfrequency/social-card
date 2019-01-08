@@ -2,7 +2,7 @@ const API = {
   fetchUserData() {
     return new Promise((res, rej) => {
       const userData = {
-        username: "Jackie Decodes",
+        userFullName: "Jackie Decodes",
         userHandle: "dwyfrequency"
       };
 
@@ -14,7 +14,7 @@ const API = {
       const cardData = [
         {
           author: "Mr. Decodes",
-          userHandle: "jackiedecodes",
+          authorHandle: "jackiedecodes",
           contentTitle: "Learning React? Start Small",
           contentDescr:
             "Can't pry yourself away from tutorials? The cure is to make tiny little experiment apps",
