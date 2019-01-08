@@ -12,13 +12,19 @@ const App = props => {
       console.log("setUserDat");
       setUserData(data);
     });
-    API.fetchCardData().then(data => setCardData(data));
-  });
-
+    API.fetchCardData().then(data => {
+      console.log("setCardData");
+      console.log(data);
+      setCardData(data);
+    });
+    return () => console.log("finished fetch");
+    // using [] b/c https://www.robinwieruch.de/react-hooks/
+  }, []);
+  console.log("log before render", userData, cardData);
   return (
     <div className="App">
-      {cardData.map(cardObj => (
-        <SocialCard {...userData} {...cardObj} />
+      {cardData.map((cardObj, index) => (
+        <SocialCard {...userData} {...cardObj} key={index} />
       ))}
     </div>
   );
