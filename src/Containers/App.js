@@ -17,7 +17,9 @@ const App = props => {
 
   return (
     <div className="App">
-      <SocialCard />
+      {cardData.map(cardObj => (
+        <SocialCard {...userData} {...cardObj} />
+      ))}
     </div>
   );
 };
