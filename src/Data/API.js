@@ -3,7 +3,8 @@ const API = {
     return new Promise((res, rej) => {
       const userData = {
         userFullName: "Jackie Decodes",
-        userHandle: "dwyfrequency"
+        userHandle: "dwyfrequency",
+        userAvatar: ""
       };
 
       return res(userData);
@@ -19,7 +20,8 @@ const API = {
           contentDescr:
             "Can't pry yourself away from tutorials? The cure is to make tiny little experiment apps",
           url: "dev.to",
-          avatar: ""
+          authorAvatar:
+            "https://avatars2.githubusercontent.com/u/8900894?s=400&u=a11d575f8faa9da6744f4965ec776f52241d4c93&v=4"
         }
       ];
       return res(cardData);

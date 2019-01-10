@@ -1,23 +1,30 @@
 import React from "react";
 
-const ContentPreview = params => {
+const ContentPreview = ({
+  userAvatar = "",
+  authorAvatar,
+  author,
+  url,
+  contentDescr,
+  contentTitle
+}) => {
   return (
-    <React.Fragment>
+    <div className="ContentPreview">
       <div className="ContentPreviewHero">
-        <img src="" alt="User's Avatar" />
-        <h1>Content Title</h1>
+        <img src={userAvatar} alt="User's Avatar" />
+        <h1>{contentTitle}</h1>
         <div className="CreditsInfo">
-          <p>Author's FullName</p> <img src="" alt="Author's Avatar" />
+          <p>{authorAvatar}</p> <img src="" alt="Author's Avatar" />
         </div>
       </div>
-      <div className="ContentPreview">
+      <div className="ContentPreviewDescription">
         <div className="ContentPreviewDescription">
-          <p>Content Title</p>
-          <p>Content Excerpt</p>
-          <p>source website url</p>
-        </div>{" "}
+          <p>{contentTitle}</p>
+          <p>{contentDescr}</p>
+          <p>{url}</p>
+        </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 
