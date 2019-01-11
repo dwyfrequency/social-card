@@ -5,13 +5,13 @@ import ContentPreview from "./ContentPreview";
 const SocialCard = ({
   author,
   authorHandle,
-  avatar,
+  avatar = "",
+  authorAvatar,
   contentTitle,
   userFullName,
   userHandle,
   url,
-  contentDescr,
-  ontentTitle
+  contentDescr
 }) => {
   return (
     <div className="SocialCard">
@@ -26,6 +26,7 @@ const SocialCard = ({
       <ContentPreview
         author={author}
         avatar={avatar}
+        authorAvatar={authorAvatar}
         url={url}
         contentDescr={contentDescr}
         contentTitle={contentTitle}
