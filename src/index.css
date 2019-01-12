@@ -26,8 +26,10 @@ a:hover {
 
 .SocialCard {
   display: flex;
+  padding: 0 0 20px 0;
   /* border: 2px solid red; */
   flex-flow: column;
+  box-shadow: rgba(0, 0, 0, 0.75) 5px 0px 5px 0px;
 }
 
 .CardHeader {
@@ -71,7 +73,8 @@ a:hover {
 
 /* ContentPreview */
 .ContentPreview {
-  margin-left: 30px;
+  margin: 0 30px;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 0px 1px 0px;
 }
 
 .ContentPreviewHero {
