@@ -33,9 +33,9 @@ const CardHeader = ({
   return (
     <div className="CardHeader">
       <div className="UserDetails">
-        <img src={userAvatar} alt="User's Avatar" className="Avatar" />
+        <img src={userAvatar} alt="User's Avatar" className="Avatar PadSm" />
         <p>
-          <strong>{userFullName}</strong>{" "}
+          <strong>{userFullName}</strong>
           <span>
             @{userHandle} - {getDate()}
           </span>

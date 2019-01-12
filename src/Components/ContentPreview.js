@@ -15,7 +15,11 @@ const ContentPreview = ({
         <h1>{contentTitle}</h1>
         <div className="CreditsInfo">
           <p>{author}</p>{" "}
-          <img src={authorAvatar} alt="Author's Avatar" className="Avatar" />
+          <img
+            src={authorAvatar}
+            alt="Author's Avatar"
+            className="Avatar PadSm"
+          />
         </div>
       </div>
       <div className="ContentPreviewDescription">

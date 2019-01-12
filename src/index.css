@@ -47,3 +47,26 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* ContentPreview */
+.ContentPreview {
+  margin-left: 10px;
+}
+
+.ContentPreviewHero {
+  display: flex;
+  flex-flow: column;
+  background-color: #e6a51e;
+  color: white;
+}
+
+.CreditsInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 2px solid black;
+}
+
+.PadSm {
+  padding: 10px;
+}
