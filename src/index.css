@@ -13,3 +13,36 @@ body {
   height: 50px;
   border-radius: 50%;
 }
+
+.SocialCard {
+  display: flex;
+  border: 2px solid red;
+  flex-flow: column;
+}
+
+.CardHeader {
+  display: flex;
+  border: 2px solid goldenrod;
+  flex-flow: column;
+}
+
+/* in CardHeader */
+.UserDetails {
+  display: flex;
+  border: 2px solid purple;
+}
+
+.TextMessage {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid green;
+}
+
+.TextMessage p {
+  margin: 0;
+  padding: 0;
+}

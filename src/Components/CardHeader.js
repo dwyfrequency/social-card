@@ -10,14 +10,16 @@ const CardHeader = ({
 }) => {
   return (
     <div className="CardHeader">
-      <img src={userAvatar} alt="User's Avatar" className="Avatar" />
-      <p>
-        <strong>{userFullName}</strong> <span>{userHandle} - Date</span>
-      </p>
-      <p>{contentTitle}</p>
-      <p>
-        {author}: @{authorHandle}
-      </p>
+      <div className="UserDetails">
+        <img src={userAvatar} alt="User's Avatar" className="Avatar" />
+        <p>
+          <strong>{userFullName}</strong> <span>@{userHandle} - Date</span>
+        </p>
+      </div>
+      <div className="TextMessage">
+        <p>{contentTitle}</p>
+        <p>{`{${author}: @${authorHandle}}`}</p>
+      </div>
     </div>
   );
 };

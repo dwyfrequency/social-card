@@ -2,8 +2,8 @@ const API = {
   fetchUserData() {
     return new Promise((res, rej) => {
       const userData = {
-        userFullName: "Jackie Decodes",
-        userHandle: "dwyfrequency",
+        userFullName: "Sweet Feet Johanson",
+        userHandle: "sweetfeet52",
         userAvatar:
           "https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295429_640.png"
       };
