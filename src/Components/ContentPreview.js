@@ -11,14 +11,14 @@ const ContentPreview = ({
   return (
     <div className="ContentPreview">
       <div className="ContentPreviewHero">
-        <img src={userAvatar} alt="User's Avatar" className="Avatar" />
+        <img src={userAvatar} alt="User's Avatar" className="Avatar LFSmPad" />
         <h1>{contentTitle}</h1>
         <div className="CreditsInfo">
-          <p>{author}</p>{" "}
+          <p>{author}</p>
           <img
             src={authorAvatar}
             alt="Author's Avatar"
-            className="Avatar PadSm"
+            className="Avatar LFSmPad"
           />
         </div>
       </div>
@@ -26,7 +26,9 @@ const ContentPreview = ({
         <div className="ContentPreviewDescription">
           <p>{contentTitle}</p>
           <p>{contentDescr}</p>
-          <p>{url}</p>
+          <p>
+            <a href={url}>{url}</a>
+          </p>
         </div>
       </div>
     </div>

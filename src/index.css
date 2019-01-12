@@ -9,6 +9,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: purple;
+}
+
 .Avatar {
   width: 50px;
   height: 50px;
@@ -17,30 +26,37 @@ body {
 
 .SocialCard {
   display: flex;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   flex-flow: column;
 }
 
 .CardHeader {
   display: flex;
-  border: 2px solid goldenrod;
+  /* border: 2px solid goldenrod; */
   flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-/* in CardHeader */
+/* CardHeader */
 .UserDetails {
   display: flex;
-  border: 2px solid purple;
+  justify-content: flex-start;
+  /* border: 2px solid purple; */
+}
+
+.UserDetails p {
+  margin: 20px 0 0 0;
+  padding: 0;
 }
 
 .TextMessage {
-  margin: 0;
+  margin: 0 0 0 70px;
   padding: 0;
   display: flex;
   flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid green;
+  align-items: flex-start;
+  /* border: 2px solid green; */
 }
 
 .TextMessage p {
@@ -48,9 +64,14 @@ body {
   padding: 0;
 }
 
+.TextMessage p:last-child {
+  /* margin: 0; */
+  padding: 0 0 10px 0;
+}
+
 /* ContentPreview */
 .ContentPreview {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .ContentPreviewHero {
@@ -64,9 +85,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
-.PadSm {
-  padding: 10px;
+.ContentPreviewDescription {
+  text-align: left;
+}
+
+.ContentPreviewDescription p {
+  margin: 0;
+  padding: 2px;
+}
+
+.LFSmPad {
+  padding: 0 10px;
 }

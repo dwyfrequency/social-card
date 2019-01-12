@@ -33,7 +33,12 @@ const CardHeader = ({
   return (
     <div className="CardHeader">
       <div className="UserDetails">
-        <img src={userAvatar} alt="User's Avatar" className="Avatar PadSm" />
+        <img
+          src={userAvatar}
+          alt="User's Avatar"
+          className="Avatar LFSmPad"
+          style={{ position: "relative", top: "27px" }}
+        />
         <p>
           <strong>{userFullName}</strong>
           <span>
