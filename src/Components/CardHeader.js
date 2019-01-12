@@ -3,7 +3,7 @@ import React from "react";
 const CardHeader = ({
   author,
   authorHandle,
-  userAvatar = "",
+  userAvatar,
   contentTitle,
   userFullName,
   userHandle

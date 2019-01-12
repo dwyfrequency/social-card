@@ -4,7 +4,8 @@ const API = {
       const userData = {
         userFullName: "Jackie Decodes",
         userHandle: "dwyfrequency",
-        userAvatar: ""
+        userAvatar:
+          "https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295429_640.png"
       };
 
       return res(userData);

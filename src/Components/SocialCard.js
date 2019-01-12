@@ -5,7 +5,7 @@ import ContentPreview from "./ContentPreview";
 const SocialCard = ({
   author,
   authorHandle,
-  avatar = "",
+  userAvatar,
   authorAvatar,
   contentTitle,
   userFullName,
@@ -18,14 +18,14 @@ const SocialCard = ({
       <CardHeader
         author={author}
         authorHandle={authorHandle}
-        avatar={avatar}
+        userAvatar={userAvatar}
         contentTitle={contentTitle}
         userFullName={userFullName}
         userHandle={userHandle}
       />
       <ContentPreview
         author={author}
-        avatar={avatar}
+        userAvatar={userAvatar}
         authorAvatar={authorAvatar}
         url={url}
         contentDescr={contentDescr}
