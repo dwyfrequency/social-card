@@ -1,11 +1,7 @@
+![alt text](https://github.com/dwyfrequency/social-card/blob/master/SocialCard.PNG)
+
 following socialcard proj => https://daveceddia.com/react-practice-projects/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-Need to read up on useEffect behavior and how to not trigger infinite loop
-
-Need to add images for avatars
-
-Need to add css styling
 
 ## Available Scripts
 
